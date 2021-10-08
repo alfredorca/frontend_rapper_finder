@@ -8,7 +8,8 @@ helperApi.interceptors.request.use(
   async (config) => {
     let token;
     try {
-      token = await JSON.parse(localStorage.getItem('jwtrapperfinder'))
+      const jwt = await JSON.parse(localStorage.getItem('jwtrapperfinder'));
+      token = jwt.token;
     } catch (error) {
       console.log(error)
     }

@@ -10,9 +10,9 @@ const SideBar = () => {
   const { loggedIn, logOutUser, admin } = useContext(AuthContext);
   const history = useHistory();
 
-  const logOut = () => {
-    logOutUser();
-    history.push("/");
+  const logOut = async () => {
+    await logOutUser();
+    // history.push("/");
   };
   return (
     <section className='sideBarMainSection'>
@@ -68,9 +68,9 @@ const SideBar = () => {
         {admin ? (
           <ul>
             <li onClick={() => {
-              window.location.pathname='/editrapper'
+              window.location.pathname='/editordeleterapper'
             }}
-            id={window.location.pathname === "/editrapper" ? "active" : ""}>
+            id={window.location.pathname === "/editordeleterapper" ? "active" : ""}>
               <div className="icon">
               <EditIcon />
               </div>

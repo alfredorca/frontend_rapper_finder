@@ -7,6 +7,8 @@ import { AuthContext } from "./context/authContext";
 import AddAlbumView from "./views/AddAlbumView";
 import AddRapperView from "./views/AddRapperView";
 import EasterEggView from "./views/EasterEggView";
+import RapperEditView from "./views/EditDeleteRapperView";
+import EditRapperView from "./views/EditRapperView";
 
 //import views
 import HomeView from "./views/HomeView";
@@ -44,6 +46,8 @@ function App() {
             />
             <AuthRoute exact path="/addrapper" component={AddRapperView} />
             <AuthRoute exact path="/addalbum" component={AddAlbumView} />
+            <AuthRoute exact path="/editordeleterapper" component={RapperEditView} />
+            <AuthRoute exact path="/editrapper/:id" component={EditRapperView} />
           </Switch>
         </div>
       </div>
