@@ -20,7 +20,7 @@ const RapperEditCard = ({rapper}) => {
     <Card.Body>
       <Card.Title>{rapper.name}</Card.Title>
       <Card.Title>{rapper.country}</Card.Title>
-      <Link to={`/editrapper/${rapper._id}`} className='btn btn-outline-primary' style={{marginRight: '4%'}}>Edit</Link>
+      {/* <Link to={`/editrapper/${rapper._id}`} className='btn btn-outline-primary' style={{marginRight: '4%'}}>Edit</Link> */}
       <button onClick={handleDeletion} className='btn btn-outline-danger'>Delete</button>
     </Card.Body>
     </Card>

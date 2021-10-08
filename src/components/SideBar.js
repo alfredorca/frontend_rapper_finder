@@ -4,8 +4,7 @@ import AddCircleIcon from "@mui/icons-material/AddCircle";
 import { useContext } from "react";
 import { AuthContext } from "../context/authContext";
 import { useHistory } from "react-router";
-import EditIcon from '@mui/icons-material/Edit';
-
+import DeleteIcon from '@mui/icons-material/Delete';
 const SideBar = () => {
   const { loggedIn, logOutUser, admin } = useContext(AuthContext);
   const history = useHistory();
@@ -72,9 +71,9 @@ const SideBar = () => {
             }}
             id={window.location.pathname === "/editordeleterapper" ? "active" : ""}>
               <div className="icon">
-              <EditIcon />
+              <DeleteIcon />
               </div>
-              <div className="title">Edit Rapper</div>
+              <div className="title">Delete Rapper</div>
             </li>
           </ul>
         ): ('hi')}
