@@ -1,0 +1,87 @@
+
+.mainLanding {
+  background-image: url('../../images/possibleLanding.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+// .welcomeBox {
+//   background-color: white;
+//   width: 30%;
+//   height: 30%;
+//   margin-left: 35%;
+// }
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.welcomeBox {
+  animation: backInDown;
+  animation-duration: 2s;
+  color: white;
+  padding-top: 3%;
+  p {
+    font-size: 5vh;
+    font-family: "Graffiti";
+  }
+}
+
+.mainLanding {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items:flex-end;
+}
+
+.landingButtons {
+  animation: backInUp;
+  animation-duration: 2s;
+  padding-bottom: 5%;
+  width: 29vw;
+}
+
+.landingButton {
+  margin-right: 5%;
+}
+
+.landingLogin {
+  background-color: rgba(110, 110, 110, 0.623);
+  padding: 5%;
+  margin: 12% auto;
+  width: 50%;
+  animation: backInDown;
+  animation-duration: 2s;
+}
+
+.form {
+  width: 80%;
+  margin: 0 auto;
+  
+  input {
+    margin-bottom: 3%;
+  }
+
+  button {
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 5%;
+  }
+
+  h2 {
+    color: white;
+    margin-bottom: 3%;
+  }
+}
+
+.SignUpLink {
+  margin-left: 40%;
+  color: rgb(121, 121, 255);
+  text-decoration: underline;
+  cursor: pointer;
+}

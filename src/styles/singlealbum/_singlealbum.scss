@@ -1,0 +1,56 @@
+.SingleAlbumMain{
+  min-height: 100vh;
+  padding-top: 10vh;
+  background-color: #050424;
+  color: white;
+}
+
+.single-album-main {
+  display: flex;
+  justify-content: space-around;
+  margin-right: 4vw;
+}
+
+.album-picture {
+  height: 70vh;
+  animation: fadeInUp;
+  animation-duration: 2s;
+}
+
+.album-text {
+  width: 40%;
+}
+
+.album-name {
+  padding-top: 20vh;
+  text-align: center;
+  h2 {
+    font-size: 10vh;
+    font-family: "Graffiti";
+    animation: fadeInUp;
+    animation-duration: 2s;
+  }
+}
+
+.album-year {
+  p {
+    font-size: 6vh;
+    text-align: center;
+    font-family: "Graffiti";
+    animation: fadeInUp;
+    animation-duration: 2s;
+  }
+}
+
+.album-songs {
+  animation: fadeInUp;
+  animation-duration: 2s;
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+}
+
+.albumTable {
+  text-align: center;
+}

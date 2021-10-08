@@ -1,0 +1,82 @@
+.singleRapperMain {
+  min-height: 100vh;
+  padding-top: 10vh;
+  background-color: #050424;
+  color: white;
+
+}
+
+.single-view-main {
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+.rapper-picture {
+  height: 50vh;
+  animation: fadeInUp;
+  animation-duration: 2s;
+}
+
+.rapper-aka {
+  margin-top: 25%;
+  animation: fadeInUp;
+  animation-duration: 2s;
+  h2 {
+    font-size: 10vh;
+    font-family: "Graffiti"
+  }
+}
+
+.rapper-country {
+  font-size: 5vh;
+  text-align: center;
+  font-family: "Graffiti";
+  animation: fadeInUp;
+  animation-duration: 2s;
+}
+
+.rapper-bio {
+  margin-top: 5vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  animation: fadeIn;
+    animation-duration: 4s;
+  p {
+    width: 80%;
+    margin-bottom: 5%;
+  }
+}
+
+.rapper-album-picture {
+  height: 40vh;
+  animation: fadeInUp;
+  animation-duration: 2s;
+}
+
+.rapper-album-name {
+  animation: fadeInUp;
+  animation-duration: 2s;
+  color: white;
+}
+
+.rapper-album {
+  text-decoration: none;
+}
+
+.rapper-albums {
+  text-align: center;
+  h2 {
+    margin-bottom: 2%;
+  }
+}
+
+.addAlbumButton {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 8vh;
+}
