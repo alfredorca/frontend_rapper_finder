@@ -47,9 +47,10 @@ const AuthProvider = ({ children }) => {
     const response = await helperApi.post("/auth/login", user);
     const { data } = response;
     setUser(data.user);
+    console.log(data.token)
     localStorage.setItem(
       "jwtrapperfinder",
-      JSON.stringify(data.token, data.user)
+      JSON.stringify({token: data.token, user: data.user})
     );
     setLoggedIn(true);
     if (data.user.role === 'ADMIN') {
