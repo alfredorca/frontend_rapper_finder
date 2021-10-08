@@ -6,7 +6,6 @@ import {useHistory} from 'react-router-dom'
 import Button from "react-bootstrap/Button";
 import MusicNoteIcon from "@mui/icons-material/MusicNote";
 import AddIcon from "@mui/icons-material/Add";
-import { Link } from "react-router-dom";
 const AddAlbumView = () => {
   const { createAlbum, album, setAlbum } = useContext(AlbumContext);
   const [disable, setDisable] = useState(false);

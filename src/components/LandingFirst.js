@@ -3,13 +3,11 @@ import { useContext } from "react";
 import { useHistory } from "react-router-dom";
 
 import { LandingContext } from "../context/LandingContext";
-import { AuthContext } from "../context/authContext";
 
 
 const LandingFirst = () => {
   const history = useHistory();
   const { setLogin } = useContext(LandingContext);
-  const {setLoggedIn } = useContext(AuthContext);
 
   const handleGuest = async () => { 
     history.push('/easteregg')
